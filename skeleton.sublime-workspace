@@ -28,50 +28,18 @@
 	"buffers":
 	[
 		{
-			"file": "assets/styles/main.styl",
+			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 130,
+				"buffer_size": 1674,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/styles/headings.styl",
+			"file": "dist/index.html",
 			"settings":
 			{
-				"buffer_size": 30,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/styles/css/body.css",
-			"settings":
-			{
-				"buffer_size": 71,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/markup/index.jade",
-			"settings":
-			{
-				"buffer_size": 568,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/iria/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 707,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/styles/body.styl",
-			"settings":
-			{
-				"buffer_size": 63,
+				"buffer_size": 440,
 				"line_ending": "Unix"
 			}
 		}
@@ -193,11 +161,32 @@
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/markup",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/scripts",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/scripts/js",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles",
-		"/home/iria/Development/sublime-projects/skeleton_v0.1/dist"
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/dist",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/test"
 	],
 	"file_history":
 	[
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/dist/main.js",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/scripts/main.coffee",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/dist/main.css.map",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/markup/index.jade",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/dist/index.html",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/main.styl",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets.json",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/scripts/write.coffee",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/scripts/text.coffee",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/.gitignore",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/css/main.css",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/headings.styl",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/body.styl",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/css/headings.css",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/css/body.css",
+		"/home/iria/Development/sublime-projects/test/.git/description",
+		"/home/iria/Development/sublime-projects/test/.git/config",
+		"/home/iria/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/iria/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 		"/home/iria/.config/sublime-text-3/Packages/User/ColorHighlighter.sublime-settings",
 		"/home/iria/Development/sublime-projects/test/main.coffee",
 		"/tmp/main.js",
@@ -215,7 +204,6 @@
 		"/home/iria/Development/sublime-projects/test/main.js",
 		"/tmp/mine.js",
 		"/home/iria/.config/sublime-text-3/Packages/JSHint Gutter/.jshintrc",
-		"/home/iria/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 		"/home/iria/.config/sublime-text-3/Packages/TrailingSpaces/trailing_spaces.sublime-settings",
 		"/home/iria/.config/sublime-text-3/Packages/User/trailing_spaces.sublime-settings",
 		"/home/iria/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
@@ -456,187 +444,67 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "assets/styles/main.styl",
+					"file": "package.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 130,
+						"buffer_size": 1674,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								130,
-								130
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Monokai (SL).tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "assets/styles/headings.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 30,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								30,
-								30
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Monokai (SL).tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "assets/styles/css/body.css",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 71,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Monokai (SL).tmTheme",
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "assets/markup/index.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 568,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								568,
-								568
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/home/iria/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 707,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								341,
-								341
+								1189,
+								1189
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Monokai (SL).tmTheme",
 							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 486.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "assets/styles/body.styl",
-					"semi_transient": false,
+					"buffer": 1,
+					"file": "dist/index.html",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 63,
+						"buffer_size": 440,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								63,
-								63
+								440,
+								440
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Monokai (SL).tmTheme",
-							"open_with_edit": true,
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
