@@ -1,0 +1,1 @@
+module.exports = "This was loaded from a coffee script file."
