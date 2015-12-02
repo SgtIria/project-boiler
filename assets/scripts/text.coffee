@@ -1,1 +1,1 @@
-module.exports = "This was loaded from a coffee script file."
+module.exports = "CHANGED This was loaded from a coffee script file."
