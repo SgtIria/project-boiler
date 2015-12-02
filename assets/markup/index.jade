@@ -4,6 +4,10 @@ html(lang="en")
         title NPM Scripts Demo
         - var x = (compileDebug==="true" ? "ON" : "OFF")
         h1  "#{x}"
+        if compileDebug==="true"
+            p TRUE
+        else
+            p FALSE
 
       body
         h1 npm scripts demo
