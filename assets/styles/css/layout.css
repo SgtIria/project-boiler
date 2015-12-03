@@ -1,0 +1,20 @@
+h2 {
+  animation: my-rainbow-animation 3s ks-easing("in-quad");
+}
+.posts {
+  padding: $padding;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+.post {
+  border: 1px solid #ddd;
+  display: block;
+  padding: 0.382em;
+  margin-bottom: 1rem;
+}

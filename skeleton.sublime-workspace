@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-bottom	styl"
+			],
+			[
+				"box-",
+				"box-sizing	styl"
+			],
+			[
+				"max",
+				"max-width	styl"
+			],
+			[
+				"analo",
+				"ks-extended-analogous"
+			],
+			[
+				"compile",
+				"compileDebug"
+			],
+			[
 				"back",
 				"background-color	styl"
 			],
@@ -28,26 +48,26 @@
 	"buffers":
 	[
 		{
-			"file": "package.json",
+			"file": "assets/styles/layout.styl",
 			"settings":
 			{
-				"buffer_size": 1674,
+				"buffer_size": 604,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/tmp/changelog_AVR4306.txt",
+			"file": "assets/styles/site.styl",
 			"settings":
 			{
-				"buffer_size": 1057,
-				"line_ending": "Windows"
+				"buffer_size": 209,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/scripts/main.coffee",
+			"file": "assets/markup/index.jade",
 			"settings":
 			{
-				"buffer_size": 120,
+				"buffer_size": 2281,
 				"line_ending": "Unix"
 			}
 		}
@@ -176,18 +196,28 @@
 	],
 	"file_history":
 	[
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/dist/site.css",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/globals.styl",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/site.styl",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/colours.styl",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/dist/index.html",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/headings.styl",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/counter",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/scripts/text.coffee",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/package.json",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets.json",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/dist/dev-bundle.js",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/dist/prod.js",
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/dist/bundle.js",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/dist/main.js",
+		"/tmp/changelog_AVR4306.txt",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/scripts/main.coffee",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/dist/main.css.map",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/markup/index.jade",
-		"/home/iria/Development/sublime-projects/skeleton_v0.1/dist/index.html",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/main.styl",
-		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets.json",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/scripts/write.coffee",
-		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/scripts/text.coffee",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/.gitignore",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/css/main.css",
-		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/headings.styl",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/body.styl",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/css/headings.css",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/css/body.css",
@@ -295,7 +325,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 70.0
 	},
 	"find_in_files":
 	{
@@ -312,6 +342,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\n  ",
+			"()\n",
+			"section",
+			"\n  ",
+			"  .analogous_a\n    background $seed_colour\n",
+			" .analogous_a\n    background $seed_colour\n ",
+			"        p \"#{locals['compileDebug'].substr(1)}\"\n",
 			"  background-color: #ffc0cb;\n",
 			"  background-color: #ffc0cb;",
 			"leng",
@@ -432,9 +469,7 @@
 			"c*z",
 			"c.t",
 			"<[apple]>",
-			"<[xi]>",
-			"<[xy]>",
-			"<[xy"
+			"<[xi]>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -452,60 +487,30 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "package.json",
+					"file": "assets/styles/layout.styl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1674,
+						"buffer_size": 604,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1189,
-								1189
+								224,
+								224
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Monokai (SL).tmTheme",
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 486.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/tmp/changelog_AVR4306.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1057,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -515,25 +520,63 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "assets/scripts/main.coffee",
-					"semi_transient": true,
+					"buffer": 1,
+					"file": "assets/styles/site.styl",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 120,
+						"buffer_size": 209,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								120,
-								120
+								129,
+								129
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
+							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Monokai (SL).tmTheme",
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "assets/markup/index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								807,
+								807
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Monokai (SL).tmTheme",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -562,11 +605,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.406674907293,
 			1.0
 		],
 		"rows":
@@ -626,7 +676,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

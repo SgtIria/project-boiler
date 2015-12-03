@@ -1,0 +1,15 @@
+.analogous_a {
+  background: #308ffe;
+}
+.analogous_b {
+  background: ks-extended-analogous(#308ffe);
+}
+.analogous_c {
+  background: ;
+}
+.analogous_d {
+  background: ;
+}
+.analogous_e {
+  background: ;
+}

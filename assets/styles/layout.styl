@@ -1,0 +1,41 @@
+section
+  $padding = unit( 1.618, 'em' )
+  center(100%, $padding)
+
+h2
+  animation my-rainbow-animation 3s ks-easing( "in-quad" )
+aside
+  stack()
+  @media (min-width 600px)
+    col($golden_minor)
+
+.posts
+  padding $padding
+  col($golden_major)
+
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+img
+  max-width 100%
+
+.post
+  border 1px solid #ddd
+  display block
+  padding 0.382em
+  margin-bottom 1rem
+  col(1)
+  > img
+    stack()
+    @media (min-width 600px)
+      col($golden_minor 1)
+  > article
+    stack()
+    @media (min-width 600px)
+      col($golden_major 1)
+      header
+        col(1 0.618 1)
+
+
+

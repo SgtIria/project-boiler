@@ -6,15 +6,14 @@
   "author": "Andrew Mepham <andy@mepham.info> (http://mepham.info/)",
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "^2.10.0",
     "browserify": "^6.3.2",
     "coffeeify": ">=1.2.0",
     "hashmark": "^2.0.0",
-    "http-server": "^0.7.3",
     "jade": "^1.7.0",
     "jeet": "^6.1.2",
     "jshint": "^2.5.10",
     "kouto-swiss": "^0.11.13",
-    "live-reload": "^0.2.0",
     "minifyify": "^4.4.0",
     "nodemon": "^1.2.1",
     "opener": "^1.4.0",
@@ -25,16 +24,15 @@
   "scripts": {
     "clean": "rimraf dist/*",
     "prebuild": "npm run clean -s",
-    "build": "npm run build:scripts -s && npm run build:uglyify && npm run build:styles -s && npm run build:markup -s",
+    "build": "npm run build:scripts -s && npm run build:uglyify && npm run build:styles -s && npm run build:markup -s && npm run build:inc",
+    "build:inc":"echo 1 >> assets/counter",
     "build:uglyify": "uglifyjs  dist/dev-bundle.js -c -o dist/bundle.js && hashmark dist/bundle.js -s -l 8 -m assets.json 'dist/{name}-{hash}{ext}'",
     "build:scripts": "browserify -t coffeeify assets/scripts/main.coffee -d > dist/dev-bundle.js && hashmark dist/dev-bundle.js -s -l 8 -m assets.json 'dist/{name}-{hash}{ext}'",
     "build:styles": "stylus assets/styles/site.styl -m -o dist/ && hashmark -s -l 8 -m assets.json dist/site.css 'dist/{name}-{hash}{ext}'",
     "build:markup": "jade assets/markup/index.jade --obj assets.json -o dist",
     "watch": "parallelshell \"npm run watch:build -s\"",
-    "watch:build": "nodemon -q -w assets/ --ext '.' --exec 'npm run build'",
-    "open:dev": "opener http://localhost:9090",
-    "serve": "http-server -p 9090 dist/",
-    "live-reload": "live-reload --port 9091 dist/",
-    "dev": "npm run open:dev -s && parallelshell \"npm run live-reload -s\" \"npm run serve -s\" \"npm run watch -s\""
+    "watch:build": "nodemon -q -w assets/ --ext js,jade,coffee,styl --exec 'npm run build'",
+    "serve": "browser-sync start --files \"assets/counter \" --server \"dist\" ",
+    "dev": "npm run watch & npm run serve"
   }
 }

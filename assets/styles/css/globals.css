@@ -1,20 +1,5 @@
-.analogous_a {
-  background: #308ffe;
-}
-.analogous_b {
-  background: ks-extended-analogous(#308ffe);
-}
-.analogous_c {
-  background: ;
-}
-.analogous_d {
-  background: ;
-}
-.analogous_e {
-  background: ;
-}
-h2.rainbow {
-  animation: my-rainbow-animation 3s linear;
+html {
+  font-family: ks-font-stack("Courier New");
 }
 @-moz-keyframes my-rainbow-animation {
   0% {

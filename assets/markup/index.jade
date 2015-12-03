@@ -1,18 +1,41 @@
 doctype html
 html(lang="en")
     head
-        title NPM Scripts Demo
-        - var x = (compileDebug==="true" ? "ON" : "OFF")
-        h1  "#{x}"
-        if compileDebug==="true"
-            p TRUE
-        else
-            p FALSE
+        title Skeleton Project
+        if env=="dev"
+            h1  Debugging is ON
+            script(src="#{locals['dist/dev-bundle.js'].substr(5)}")
 
-      body
-        h1 npm scripts demo
-        #container
-            p.
-                All of this content was created using various preprocessors and
-                compilers, as well as test tools and watchers, without using
-                Grunt, Gulp, Brocolli, Fez, Jake, etc.
+        else
+            h1  In Production Remove Me.
+            script(src="#{locals['dist/bundle.js'].substr(5)}")
+
+        link(rel="stylesheet",href="#{locals['dist/site.css'].substr(5)}")
+    body
+        section
+            aside
+                h2.rainbow Skeleton Project V12
+                #container
+                p Beef noodles motion decay conGarage military-grade 8-bit systemic dolphin shrine carbon bomb A.I. human office apophenia papiNarrative paranoid saturation point post-long-chain hydrocarbons pistol advert stimulate wonton soup. Math-towards artisanal nodality woman range-rover market. Marketing sensory beef noodles tank-traps network rifle jeans semiotics tube engine assassin 8-bit adal point sign. Fluidity San-man military-grade towards DIY meta-vinyl grenade tanto semiotics cardboard claymore mine courier. Assassin tank-traps warehouse beef noodles free-market neural shrine plastic.
+            div.posts
+                .post
+                    img(src="http://placehold.it/500x200.png/308ffe?text=Placeholder")
+                    article
+                        header
+                            h3 A Header
+                            p Nodality augmented numinous long-chain hydrocare warehouse. Camera advert veranoid warehouse A.I. garage oo god katana garage neon savant man.
+                .post
+                    img(src="http://placehold.it/500x200.png/3830fe?text=Placeholder")
+                    article
+                        header
+                            h3 A Header
+                            p Nodality augmented numinous long-chain hydrocare warehouse. Camera advert veranoid warehouse A.I. garage oo god katana garage neon savant man.
+                .post
+                    img(src="http://placehold.it/500x200.png/30f6fe?text=Placeholder")
+                    article
+                        header
+                            h3 A Header
+                            p Nodality augmented numinous long-chain hydrocare warehouse. Camera advert veranoid warehouse A.I. garage oo god katana garage neon savant man.
+
+
+
