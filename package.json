@@ -20,6 +20,7 @@
     "parallelshell": "^1.0.0",
     "q": "^1.4.1",
     "rimraf": "^2.2.8",
+    "riot": "^2.3.11",
     "stylus": "^0.49.3"
   },
   "scripts": {
