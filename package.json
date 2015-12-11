@@ -18,6 +18,7 @@
     "nodemon": "^1.2.1",
     "opener": "^1.4.0",
     "parallelshell": "^1.0.0",
+    "q": "^1.4.1",
     "rimraf": "^2.2.8",
     "stylus": "^0.49.3"
   },
@@ -25,7 +26,7 @@
     "clean": "rimraf dist/*",
     "prebuild": "npm run clean -s",
     "build": "npm run build:scripts -s && npm run build:uglyify && npm run build:styles -s && npm run build:markup -s && npm run build:inc",
-    "build:inc":"echo 1 >> assets/counter",
+    "build:inc": "echo 1 >> assets/counter",
     "build:uglyify": "uglifyjs  dist/dev-bundle.js -c -o dist/bundle.js && hashmark dist/bundle.js -s -l 8 -m assets.json 'dist/{name}-{hash}{ext}'",
     "build:scripts": "browserify -t coffeeify assets/scripts/main.coffee -d > dist/dev-bundle.js && hashmark dist/dev-bundle.js -s -l 8 -m assets.json 'dist/{name}-{hash}{ext}'",
     "build:styles": "stylus assets/styles/site.styl -m -o dist/ && hashmark -s -l 8 -m assets.json dist/site.css 'dist/{name}-{hash}{ext}'",
