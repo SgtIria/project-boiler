@@ -2,9 +2,9 @@
 riot = require "riot"
 
 # callback function to load all tags when dom is ready
-loadRiotTags ->
+loadRiotTags = ->
   riotTags = require "../tags/heading.js"
-  riot.mount("*")
+  riot.mount riotTags
 window.addEventListener("DOMContentLoaded", loadRiotTags)
 
 # callback function to load any external code I want on dom ready
