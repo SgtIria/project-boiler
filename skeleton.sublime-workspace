@@ -67,7 +67,7 @@
 			"file": "assets/markup/index.jade",
 			"settings":
 			{
-				"buffer_size": 1537,
+				"buffer_size": 1719,
 				"line_ending": "Unix"
 			}
 		},
@@ -195,15 +195,12 @@
 	[
 		"/home/iria/Development/sublime-projects/skeleton_v0.1",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets",
-		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/markup",
-		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/scripts",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/scripts/js",
-		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles",
-		"/home/iria/Development/sublime-projects/skeleton_v0.1/dist",
-		"/home/iria/Development/sublime-projects/skeleton_v0.1/test"
+		"/home/iria/Development/sublime-projects/skeleton_v0.1/node_modules"
 	],
 	"file_history":
 	[
+		"/home/iria/.ssh/known_hosts",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/dist/site.css",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/globals.styl",
 		"/home/iria/Development/sublime-projects/skeleton_v0.1/assets/styles/site.styl",
@@ -511,8 +508,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								156,
+								156
 							]
 						],
 						"settings":
@@ -559,7 +556,7 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -568,7 +565,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1537,
+						"buffer_size": 1719,
 						"regions":
 						{
 						},
@@ -590,7 +587,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -606,8 +603,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								278,
+								278
 							]
 						],
 						"settings":
@@ -618,7 +615,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
