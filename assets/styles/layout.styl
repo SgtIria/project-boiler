@@ -1,9 +1,27 @@
+
+html
+  font-family ks-font-stack( Palatino )
+
+// select all and set margin/padding and box-sizing
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+
 section
   $padding = unit( 1.618, 'em' )
   center(100%, $padding)
 
 h2
-  animation my-rainbow-animation 3s ks-easing( "in-quad" )
+  &:before
+    content "\2698"
+    margin 0 0.5em
+h1
+  &:before
+    //ks-triangle( right, px(5), $highlight_greyed )
+    ks-triangle( right, px(5), blue )
+
+
 aside
   stack()
   @media (min-width 600px)
@@ -13,18 +31,14 @@ aside
   padding $padding
   col($golden_major)
 
-*
-  margin 0
-  padding 0
-  box-sizing border-box
 img
   max-width 100%
 
 .post
-  border 1px solid #ddd
+  border px(1) solid $highlight_greyed
   display block
-  padding 0.382em
-  margin-bottom 1rem
+  padding px(3.82)
+  margin-bottom px(6.18)
   col(1)
   > img
     stack()
@@ -36,6 +50,13 @@ img
       col($golden_major 1)
       header
         col(1 0.618 1)
-
+      p  
+        &:first-of-type:first-letter
+          font-size 2.3em
+          line-height 1.5em
+          font-weight 300
+          animation my-rainbow-animation 3s ks-easing( "in-quad" )
+          color $highlight_dark
+   
 
 

@@ -1,3 +1,11 @@
+$highlight_colour = #3084bf
+$highlight_dark = darken($highlight_colour,15%)
+$highlight_light = lighten($highlight_colour,15%)
+$highlight_greyed = lighten(desaturate($highlight_colour,70%),50%)
+$highlight_hover = saturate($highlight_light,40%)
+$highlight_textover = lighten($highlight_light,50%)
+
+
 $seed_colour = #308ffe
 $analogous = ks-extended-analogous($seed_colour)
   .analogous_a
@@ -10,3 +18,6 @@ $analogous = ks-extended-analogous($seed_colour)
     background $analogous[2]
   .analogous_e
     background $analogous[3]
+
+
+

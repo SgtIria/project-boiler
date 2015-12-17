@@ -51,7 +51,7 @@
 			"file": "assets/styles/layout.styl",
 			"settings":
 			{
-				"buffer_size": 604,
+				"buffer_size": 1051,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,7 +59,7 @@
 			"file": "assets/styles/site.styl",
 			"settings":
 			{
-				"buffer_size": 209,
+				"buffer_size": 205,
 				"line_ending": "Unix"
 			}
 		},
@@ -67,7 +67,15 @@
 			"file": "assets/markup/index.jade",
 			"settings":
 			{
-				"buffer_size": 2281,
+				"buffer_size": 1537,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/iria/Downloads/css.vim",
+			"settings":
+			{
+				"buffer_size": 12236,
 				"line_ending": "Unix"
 			}
 		}
@@ -496,44 +504,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 604,
+						"buffer_size": 1051,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								224,
-								224
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Monokai (SL).tmTheme",
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "assets/styles/site.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 209,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								129,
-								129
+								0,
+								0
 							]
 						],
 						"settings":
@@ -547,11 +526,40 @@
 					},
 					"stack_index": 2,
 					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "assets/styles/site.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 205,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Monokai (SL).tmTheme",
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -560,15 +568,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2281,
+						"buffer_size": 1537,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								807,
-								807
+								0,
+								0
 							]
 						],
 						"settings":
@@ -577,6 +585,34 @@
 							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/iria/Downloads/css.vim",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

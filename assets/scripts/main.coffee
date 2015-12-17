@@ -3,14 +3,15 @@ riot = require "riot"
 
 # callback function to load all tags when dom is ready
 loadRiotTags = ->
-  riotTags = require "../tags/heading.js"
-  riot.mount "*"
+  require "../tags/alltags.js"
+  riot.mount "rt-heading", {heading:'Default Heading'}
+  riot.mount "rt-title", {title:'Default Title'}
 window.addEventListener("DOMContentLoaded", loadRiotTags)
 
 # callback function to load any external code I want on dom ready
 write = require "./write.coffee"
 window.addEventListener("DOMContentLoaded", write)
-console.log 'dist/main.js'.substr(5)
+console.log "Root file for bundle = #{'dist/main.j'.substr(5)}"
 
 
 
