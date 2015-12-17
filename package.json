@@ -43,6 +43,7 @@
     "w:tags": "nodemon -q -w asets/ --ext js,jade,coffee,styl --exec 'npm run build'",
     "w:build": "nodemon -q -w asets/ --ext js,jade,coffee,styl --exec 'npm run build'",
     "w:styles": "nodemon -q -w asets/ --ext js,jade,coffee,styl --exec 'npm run build'",
-    "w:jade": "nodemon -q -w asets/ --ext js,jade,coffee,styl --exec 'npm run build'"
+    "w:jade": "nodemon -q -w asets/ --ext js,jade,coffee,styl --exec 'npm run build'",
+    "t:json-server": "json-server --port 3030 ./test/db.json"
   }
 }
