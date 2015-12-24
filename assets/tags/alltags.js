@@ -9,6 +9,10 @@
   }
 })(function(riot, require, exports, module) {
 
+riot.tag2('rt-form', '<div class="stylusbox"> <h3>Simple Form Tag </H3> <form onsubmit="@submit"> <input id="input1" name="Input1"> </form> <p>External option variable: {opts.inputPlaceholder} </p> <p>Internal coffeescript variable: {this.myVariable}</p> </div>', '.stylusbox { background: #ececec; color: #606060; border: 0.0618em solid #c9c9c9; text-align: center; font-size: 2em; padding: 1em; margin: 1em; }', '', function(opts) {
+this.myVariable = "Test Var";
+}, '{ }');
+
 riot.tag2('rt-heading', '<h3>changed tag expression data <b>{opts.heading} </b></H3> <p>Should be some text here <b>{this.myVariable}</b></P>', '', '', function(opts) {
 this.myVariable = "Test Var";
 }, '{ }');

@@ -1,9 +1,24 @@
 rt-form
-  H2 Simple Form Tag 
-  form(onSubmit="@submit")
-    input#input1(name="Input1") 
-    b { opts.inputPlaceholder } 
-  P Should be some text here 
-    b { @myVariable }
+  .stylusbox
+    H3 Simple Form Tag 
+    form(onSubmit="@submit")
+      input#input1(name="Input1") 
+    
+    p External option variable: { opts.inputPlaceholder } 
+  
+    p Internal coffeescript variable: { @myVariable }
+
   SCRIPT.
     @myVariable = "Test Var"
+
+  style(type="text/css")
+    :stylus
+      .stylusbox
+        background #ececec
+        color #606060
+        border 0.0618em solid darken(@background, 15%)
+        text-align center
+        font-size 2em
+        padding 1em
+        margin 1em
+

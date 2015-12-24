@@ -9,8 +9,11 @@
     riot.mount("rt-heading", {
       heading: 'Default Heading'
     });
-    return riot.mount("rt-title", {
+    riot.mount("rt-title", {
       title: 'Default Title'
+    });
+    return riot.mount("rt-form", {
+      test: 'Test'
     });
   };
 

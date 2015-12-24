@@ -1,52 +1,39 @@
-doctype html
-html(lang="en")
-  head
-    title Skeleton Project
-    if env=="dev"
-      h1  Debugging is ON
-      script(src="dev-bundle.js")
-    else
-      h1  In Production Remove Me.
-      script(src="#{locals['dist/bundle.js'].substr(5)}")
+extends documentWrapper
 
+block title
+  title #{title}
+
+append meta 
+  meta( name='description', content='#{description}' )
+
+block debugging
+  if env=="dev"
+    h1  Debugging is ON
+    script(src="dev-bundle.js")
+    link(rel="stylesheet",href="site.css")
+  else
+    h1  In Production Show Production Hash?
+    script(src="#{locals['dist/bundle.js'].substr(5)}")
     link(rel="stylesheet",href="#{locals['dist/site.css'].substr(5)}")
-  body
-    section
-      p Test section
-      aside
-        p Test aside
-        p(riot-tag="rt-heading", name="riot", heading="OptHeading")
-        h2.rainbow Skeleton Project V12
-          #container
-            p Beef noodleshuman  warehouse beef noodles free-market neural shrine plastic.
-      div.posts
-            .post
-                img(src="http://placehold.it/500x200.png/308ffe?text=Placeholder")
-                article
-                    header
-                        h3 A Header
-                        p Please garage oo god katana garage neon savant man.
-            .post
-                img(src="http://placehold.it/500x200.png/3830fe?text=Placeholder")
-                article
-                    header
-                        h3 A Header
-                        p Help ra advert veranoid warehouse A.I. garage oo god katana garage neon savant man.
-            .post
-                img(src="http://placehold.it/500x200.png/30f6fe?text=Placeholder")
-                article
-                    header
-                        h3 A Header
-                        p Us se A.I. garage oo god katana garage neon savant man.
 
-    h1 Heading 1
-    h2 Heading 2
-    h3 Heading 3 
-    h4 Heading 4
-    h5 Heading 5
-    h6 Heading 6
+append style
+  // link(rel="stylesheet",href="#{locals['dist/site.css'].substr(5)}")
 
-    rt-title(name="test")&attributes({'title':'OptTitle'}) 
-    rt-title#test&attributes({'title':'ID Object'}) 
-    p(riot-tag="rt-heading")
-    p The End
+block navigation
+  p: strong NAV BLOCK
+    br
+  include navigation
+  
+block content
+  p: strong CONTENT BLOCK
+    br
+  include layoutLanding
+
+  rt-form
+
+
+block footer
+  p: strong FOOTER BLOCK
+    br
+  include footer
+
