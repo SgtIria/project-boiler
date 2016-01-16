@@ -1,8 +1,8 @@
 rt-form
-  .stylusbox
-    H3 Simple Form Tag 
-    form(onSubmit="@submit")
-      input#input1(name="Input1") 
+    .stylusbox
+        H3 Simple Form Tag 
+            form(onSubmit="@submit")
+            input#input1(name="Input1") 
     
     p External option variable: { opts.inputPlaceholder } 
   
@@ -13,12 +13,12 @@ rt-form
 
   style(type="text/css")
     :stylus
-      .stylusbox
-        background #ececec
-        color #606060
-        border 0.0618em solid darken(@background, 15%)
-        text-align center
-        font-size 2em
-        padding 1em
-        margin 1em
+        .stylusbox
+            background #ececec
+            color #606060
+            border 0.0618em solid darken(@background, 15%)
+            text-align center
+            font-size 2em
+            padding 1em
+            margin 1em
 

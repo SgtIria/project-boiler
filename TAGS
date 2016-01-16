@@ -1,0 +1,27 @@
+
+assets/scripts/write.coffee,86
+message = require "./text.coffee"message1,0
+module.exports = ->module.exports2,34
+
+assets/scripts/text.js,0
+
+assets/scripts/text.coffee,58
+module.exports = "HELLO!!! to mum"module.exports1,0
+
+assets/scripts/js/text.js,0
+
+assets/scripts/js/write.js,58
+  message = require("./text.coffee");module.exports5,66
+
+assets/scripts/js/main.js,0
+
+assets/scripts/write.js,58
+  message = require("./text.coffee");module.exports5,66
+
+assets/scripts/main.coffee,114
+riot = require "riot"riot2,18
+loadRiotTags = ->loadRiotTags5,96
+write = require "./write.coffee"write13,413
+
+assets/scripts/main.js,44
+  riot = require("riot");loadRiotTags5,84
