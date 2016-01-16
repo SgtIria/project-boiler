@@ -35,7 +35,7 @@
     "pre:clean": "rimraf dist/*",
     "pre:mkdir": "mkdir dist/",
     "pre:assets": "echo  '{\n\"env\":\"dev\",\n\"title\":\"Project Title\",\n\"description\":\"Project Description\",\n\"keywords\":\"coffeescript\"\n}' > assets.json",
-    "prebuild": "npm run pre:clean -s && npm run pre:mkdir && npm run pre:assets",
+    "firstbuild": "npm run pre:clean -s && npm run pre:mkdir && npm run pre:assets && npm run build",
     "watch": "parallelshell \"npm run w:scripts\" \"npm run w:jade\" \"npm run w:styles\" \"npm run w:tags\" \"npm run w:overwatch -s\"",
     "serve": "browser-sync start --files \"assets/counter \" --server \"dist\" ",
     "dev": "parallelshell \"npm run watch\" \"npm run serve\"",
