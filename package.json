@@ -19,6 +19,7 @@
     "kouto-swiss": "^0.11.13",
     "lodash": "^3.10.1",
     "minifyify": "^4.4.0",
+    "mkdirp": "^0.5.1",
     "nodemon": "^1.2.1",
     "opener": "^1.4.0",
     "parallelshell": "^1.0.0",
@@ -31,8 +32,10 @@
     "watchify": "^3.6.1"
   },
   "scripts": {
-    "clean": "rimraf dist/*",
-    "prebuild": "npm run clean -s",
+    "pre:clean": "rimraf dist/*",
+    "pre:mkdir": "mkdir dist/",
+    "pre:assets": "echo  '{\n\"env\":\"dev\",\n\"title\":\"Project Title\",\n\"description\":\"Project Description\",\n\"keywords\":\"coffeescript\"\n}' > assets.json",
+    "prebuild": "npm run pre:clean -s && npm run pre:mkdir && npm run pre:assets",
     "watch": "parallelshell \"npm run w:scripts\" \"npm run w:jade\" \"npm run w:styles\" \"npm run w:tags\" \"npm run w:overwatch -s\"",
     "serve": "browser-sync start --files \"assets/counter \" --server \"dist\" ",
     "dev": "parallelshell \"npm run watch\" \"npm run serve\"",
