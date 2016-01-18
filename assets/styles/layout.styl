@@ -1,66 +1,268 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400)
 
 html
-  // font-family 'Sigmar One', cursive
-  font-family 'Alegreya Sans'
-  font-weight 300
-  // font-family ks-font-stack( Palatino ) 'Snowburst One' cursive  
-  
-// select all and set margin/padding and box-sizing
-*
+  top 0
   margin 0
   padding 0
-  box-sizing border-box
+  font-size unit($fontSize,'em')
+  @media (min-width: 25em) 
+    font-size unit($fontSize + (1*$fontScale),'em')
+  @media (min-width: 31.25em) 
+    font-size unit($fontSize + (2*$fontScale),'em')
+  @media (min-width: 37.5em) 
+    font-size unit($fontSize + (3*$fontScale),'em')
+  @media (min-width: 43.75em) 
+    font-size unit($fontSize + (4*$fontScale),'em')
+
+body
+  ks-box-sizing-reset()
+  // font-family 'Sigmar One', cursive
+  font-family 'Roboto'
+  font-weight 300
+  color $textLight
+  //  background-color hsl(0,0%,0%,0.8)
+
+
+// Section layouts (chapters) Both full width and centered
+
+.full-strip
+  cf()
+  width 100%
+  //margin auto
 
 section
-  $padding = unit( 1.618, 'em' )
-  center(100%, $padding)
+  cf()  
+  //$padding = unit( 1.618, 'em' )
+  //center(100%, $padding)
+  max-width 100%
+  max-width 1200px
+  margin auto
+  height 80%
+  // mobile make room for menu nav
+  padding-top 6em  
+  @media(min-width: unit($min_width, 'em'))
+    // desktop needs less space
+    padding 3em
+  &:nth-of-type(2n)
+    background-color: $colOffset 
+    height 100%
+  &:nth-of-type(3n)
+    background-color: $textDark 
+    height 100%
 
 h2
   &:before
     content "\2698"
     margin 0 0.5em
+
 h1
-  &:before
-    //ks-triangle( right, px(5), $highlight_greyed )
-    ks-triangle( right, px(5), blue )
+  padding 0
+  margin 0
+  font-weight 400
 
+// debugging flag
+.debugging
+  bottom 0
+  left 0
+  position fixed 
+  font-size 1em
+  font-weight 100
 
-aside
+// Layout Section
+.row
+  span(1)
+  // background-color hsl(0,0%,0%,0.2)
+  padding-top 2%
+  padding-bottom 2%
+
+.row-half
+  col(1/2, gutter: 2, cycle:2)
+  padding-top 2%
+  padding-bottom 2%
+  
+.layoutbox
+  min-height 10em
+  text-transform uppercase
+  
+.article-third
   stack()
-  @media (min-width 600px)
-    col($golden_minor)
-
-.posts
-  font-weight 300
-  padding $padding
-  col($golden_major)
-
-img
-  max-width 100%
-
-.post
-  border px(1) solid $highlight_greyed
-  display block
-  padding px(3.82)
-  margin-bottom px(6.18)
-  col(1)
-  > img
-    stack()
-    @media (min-width 600px)
-      col($golden_minor 1)
-  > article
-    stack()
-    @media (min-width 600px)
-      col($golden_major 1)
-      header
-        col(1 0.618 1)
-      p  
-        &:first-of-type:first-letter
-          font-size 2.3em
-          line-height 1.5em
-          font-weight 300
-          animation my-rainbow-animation 3s ks-easing( "in-quad" )
-          color $highlight_dark
+  @media (min-width 650px)
+    span(1/3 1/2)
+      
+.article-two-thirds
+  stack()
+  @media (min-width 650px)
+    span(2/3 1/2)
    
+  
+.article-block
+  cf()
+  //border 1px solid grey
+  .centered
+   text-align center
+  .icon
+   //border 3px solid grey 
+   min-height 3em
+  .article
+   min-height 3em
+   line-height 130%
+   .icon
+     //background-color white
+     // border 15px solid white
+   .heading
+     padding-top .5em
+     letter-spacing 3px
+     padding-left 1em
+     font-weight 700
+     color $textLight
+   .sub-heading
+     letter-spacing 2px
+     font-weight 300
+     font-size 80%
+     padding-left 3em
+     color darken(darkgrey,20%)
+   .strap-line
+     padding-right 2em
+     font-weight 400
+     font-variant small-caps
+     text-align right
+     font-style italic
+     padding-left 3em
+   .text
+     font-weight 300
+     padding-left 2em
+     padding-top 1em
+     padding-right 1em
+     padding-bottom 2em
+     color $textLight
+     .strong
+       font-weight 400
+       color blue
+   .quote
+     text-align center
+     font-weight 700
+     color purple
+     font-variant small-caps
+     &:before
+       content '"'
+       font-size 200%
+     &:after
+       content '"'
+       font-size 200%
+//circular image
+img
+  cf()
+  width 90%
+  //align middle
+  overflow hidden
+  border 7px solid darken(white,8%)
+  border-radius 999em
+  //float left
+  //margin-right .75em
+  //margin-left -.25em
 
 
+
+// Button Section
+
+.btn 
+  display: inline-block
+  background: $btnBackground
+  border: 0
+  line-height 1em
+  padding: 0 0 0 1em
+  //margin-bottom: 1em
+  outline none
+  text-decoration none
+  color $btnText
+  //border-radius 999em
+  .symbol
+    display: inline-block
+    line-height: 2em
+    text-align: center
+    background: #333
+    color: white
+    font-size: .7em
+    width: 2.5em
+    transition: margin 200ms
+    margin-left: .75em
+  
+  &:hover 
+    background: white
+    .symbol
+      margin-left: 1.25em
+      background-color: darken(#333,5%)
+   
+  &:active 
+    background: #ccc
+    .symbol 
+      margin-left: 1.5em
+
+.btn-info 
+  .symbol 
+    background-color $colOffset
+  &:hover 
+    .symbol 
+      background-color desaturate(lighten($colOffset,15%),5%)
+      
+.btn-menu
+  .symbol 
+    background-color $textDark
+  &:hover 
+    .symbol 
+      background-color: desaturate(lighten($textDark,15%),5%)      
+      
+.btn-action
+  .symbol 
+    background-color: purple
+  &:hover 
+    .symbol 
+      background-color: desaturate(lighten(purple,15%),5%) 
+
+
+// navigation Setup
+
+
+.header
+  padding 0
+  margin 0 
+  position fixed
+  top 0
+  right 0
+
+#icon-quietstar
+  position fixed
+  left 0
+  top 0
+  height 2em
+  width 9.5em
+
+#star
+  fill $lightfill
+  
+#quiet
+  fill $darkfill  
+  
+.overlay-navigation 
+  position: fixed
+  z-index: -9
+  top: 0
+  left: 0
+  width: 0
+  background-color: hsla(0, 0%, 0%, 0.8)  
+  transform: translateY(-100%)
+
+.overlay-slide-down 
+  transition: all .4s ease-in-out
+  transform: translateY(0)
+
+
+// Background Setup
+.background
+  position fixed
+  min-width 100%
+  min-height 100%
+  //height 82vn
+  z-index -100
+  background: url('http://i.imgbox.com/KvqAQrQw.jpg') no-repeat
+  background-size: cover

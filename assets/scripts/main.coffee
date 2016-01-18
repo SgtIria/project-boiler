@@ -1,14 +1,17 @@
-# require riot.js
-riot = require "riot"
-
-# callback function to load all tags when dom is ready
-loadRiotTags = ->
-  require "../tags/alltags.js"
-  riot.mount "rt-heading", {heading:'Default Heading'}
-  riot.mount "rt-title", {title:'Default Title'}
-  riot.mount "rt-form", {test: 'Test'}
-window.addEventListener("DOMContentLoaded", loadRiotTags)
-
+$ = require "../../node_modules/jquery"
+require "../../node_modules/jquery-smooth-scroll"
+$ ->
+  # tell smoothScroll to handle links in the menu
+  $('#menu a').smoothScroll()
+    
+  $('#menu a').click ( (event) ->
+    event.preventDefault()
+    #link = @
+    $.smoothScroll {} = scrollTarget:@.hash )
+  overlayNav = $('.overlay-navigation')
+  overlayNav
+    .addClass 'overlay-slide-down'
+#
 # callback function to load any external code I want on dom ready
 write = require "./write.coffee"
 window.addEventListener("DOMContentLoaded", write)

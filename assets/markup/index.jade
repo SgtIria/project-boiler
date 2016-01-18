@@ -6,13 +6,16 @@ block title
 append meta 
   meta( name='description', content='#{description}' )
 
+block background
+  include background
+
 block debugging
   if env=="dev"
-    h1  Debugging is ON
+    .debugging  Debugging is ON
     script(src="dev-bundle.js")
     link(rel="stylesheet",href="site.css")
   else
-    h1  In Production Show Production Hash?
+    .debugging  In Production Show Production Hash?
     script(src="#{locals['dist/bundle.js'].substr(5)}")
     link(rel="stylesheet",href="#{locals['dist/site.css'].substr(5)}")
 
@@ -20,20 +23,11 @@ append style
   // link(rel="stylesheet",href="#{locals['dist/site.css'].substr(5)}")
 
 block navigation
-  p: strong NAV BLOCK
-    br
   include navigation
   
 block content
-  p: strong CONTENT BLOCK
-    br
   include layoutLanding
 
-  rt-form
-
-
 block footer
-  p: strong FOOTER BLOCK
-    br
   include footer
 
